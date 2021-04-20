@@ -13,7 +13,7 @@ class GameClient {
 		this.client.on('connected', res => { console.log('onConnect response:', res) })
 		this.client.on('disconnected', () => { console.log('connection closed') })
 		//this.client.connect('ws://localhost:8079')
-		this.client.connect('ws://35.222.227.86:8079/public')
+		this.client.connect('ws://35.222.227.86:8079')
 	}
 
 	update(delta, tick, now) {
