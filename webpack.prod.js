@@ -7,5 +7,10 @@ module.exports = merge(common, {
     optimization: {
         minimizer: [new TerserPlugin()],
     },
-    
+    devServer: {
+        contentBase: path.join(__dirname, './public'),
+        publicPath: 'http://35.222.227.86:8080/js/',
+        compress: true,
+        port: 8080
+    }
 })
