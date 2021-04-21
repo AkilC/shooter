@@ -6,7 +6,7 @@
     "start": "npx npm-run-all --parallel server client",
     "server": "npx nodemon ./server/index.js --ignore public",
     "client": "npx webpack-dev-server --config webpack.dev.js",
-    "build": "npx webpack --config webpack.prod.js"
+    "build": "npx webpack-dev-sever --config webpack.prod.js"
   },
   "author": "timetocode // Alex",
   "license": "Apache 2.0",
